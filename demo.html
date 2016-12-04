@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compact Vue</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+
+<div id="container">
+    <span data-index="{{b}}"></span>
+    {{a}}
+</div>
+<button type="" id="btn" style="margin: 1rem;display: block;text-align: center;background: #333;border:0;padding: 5px 20px;color: #fff;">+1</button>
+    
+<script type="text/javascript" src="/jquery-1.7.2.min.js"></script>
+<script>
+    let cvue = new CVue({
+        el:'#container',
+        data: {
+            a: 1,
+            b: 2
+        }
+    });
+
+    // cvue.$watch('a', function(){
+    //     console.log('a is change to :');
+    //     console.log(cvue.$data.a)
+    // });
+
+    // cvue.$data.a = 2
+
+    $('#btn').click(function(){
+        cvue.$data.a += 1
+    });
+</script>
+</body>
+</html>

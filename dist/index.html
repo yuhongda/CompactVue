@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compact Vue</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+
+
+    
+<script type="text/javascript" src="dist/c-vue.min.js"></script><script type="text/javascript" src="c-vue.min.js"></script></body>
+<script>
+    let cvue = new CVue({
+        data: {
+            a: 1
+        }
+    });
+
+    cvue.$watch('a', function(){
+        console.log('a is change to :');
+        console.log(cvue.$data.a)
+    });
+
+    cvue.$data.a = 2
+</script>
+</body>
+</html>
