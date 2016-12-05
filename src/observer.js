@@ -25,7 +25,7 @@ export function defineReactive(obj, key, val){
             if(Dep.target){
                 var has = false;
                 for (var i = 0, l = dep.subs.length; i < l; i++){
-                    if(dep.subs[i].expOrFn == Dep.target.expOrFn){
+                    if(dep.subs[i].id == Dep.target.id){
                         has = true
                     }
                 }

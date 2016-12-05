@@ -8,7 +8,7 @@ function CVue(options){
     let data = this.$data = this.$options.data
     Object.keys(data).forEach(key => this._proxy(key))
     observe(data)
-    console.log();
+
     this.$compile = new Compile(options.el || document.body, this)
 }
 

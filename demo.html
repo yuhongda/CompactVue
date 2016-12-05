@@ -7,12 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no" />
+
+    <style>
+        .uppercase{text-transform:uppercase}
+    </style>
 </head>
 <body>
 
 <div id="container">
-    <span data-index="{{b}}"></span>
-    {{a}}
+    <p class="{{$b + ' ' + $a}}">Increasement</p>
+    {{$b + ' ' + $a}}
+    <p>
+        {{$a + $a}}
+    </p>
 </div>
 <button type="" id="btn" style="margin: 1rem;display: block;text-align: center;background: #333;border:0;padding: 5px 20px;color: #fff;">+1</button>
     
@@ -22,7 +29,7 @@
         el:'#container',
         data: {
             a: 1,
-            b: 2
+            b: 'uppercase'
         }
     });
 
