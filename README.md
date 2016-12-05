@@ -7,4 +7,4 @@ Now, it's only implement MVVM for TextNode.
 
 ## Usage
 
-![screen shot 2016-12-05 at 11 30 31 am](https://cloud.githubusercontent.com/assets/259410/20873000/4f66a58c-bade-11e6-86a6-1699a6894b43.png)
+![screen shot 2016-12-05 at 9 11 21 pm](https://cloud.githubusercontent.com/assets/259410/20886193/d44d595c-bb2f-11e6-86dc-679ddfb1b175.png)
